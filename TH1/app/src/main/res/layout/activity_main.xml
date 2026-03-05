@@ -8,13 +8,14 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="197dp"
-        android:layout_height="63dp"
-        android:text="Hello World!"
+        android:layout_width="266dp"
+        android:layout_height="165dp"
+        android:text="Xin chao cac ban toi ten la Nguyen Truong Son"
         android:textColor="#ED0000"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
