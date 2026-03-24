@@ -1,8 +1,11 @@
 package nts.cntt2.th7_listview;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,7 +16,7 @@ import androidx.core.view.WindowInsetsCompat;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
-
+    ArrayList<String> dsTenTinhThanhVN; //Khai báo
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,7 +32,6 @@ public class MainActivity extends AppCompatActivity {
         //??: Từ đâu có: Từ cơ sở dữ liệu
         // Ở bài này chúng ta hard-code dữ liệu trực tiếp
         // Cần biến phù hợp để chứa dữ liệu
-        ArrayList<String> dsTenTinhThanhVN; //Khai báo
         dsTenTinhThanhVN = new ArrayList<>(); //Tạo thể hiện cụ thể
         //Thêm dữ liệu tại đây (đúng ra, ta phải đọc từ 1 nguồn )
         //Nhưng ta hard-code (cho sẵn demo)
@@ -46,6 +48,20 @@ public class MainActivity extends AppCompatActivity {
         //3.2 Gắn
         lvtenTinhThanh.setAdapter(adapterTinhThanh);
         //3.3 Lắng nghe và xử lý sự kiện người dùng tương tác
+        // Gắn bộ lắng nghe vào
+        lvtenTinhThanh.setOnItemClickListener(BoLangNghevaXL);
 
     }
+    //Tạo bộ lắng nghe và xử lý sự kiện OnItemClick, đặt vào 1 biến
+    //vd: BoLangNghevaXL
+    AdapterView.OnItemClickListener BoLangNghevaXL = new AdapterView.OnItemClickListener() {
+        @Override
+        public void onItemClick(AdapterView<?> parent, View view, int i, long l) {
+            //Code xử lý ở đây
+            //i là vị trí phần tử đc click
+            //ví dụ xử lý ở dây, là hiện lên màn hình một thông báo nhanh về vị trí của phần tử vừa chọn
+            String StrtenTinhChon = dsTenTinhThanhVN.get(i);
+            Toast.makeText(MainActivity.this, " Bạn vừa chọn "+StrtenTinhChon,Toast.LENGTH_LONG).show();
+        }
+    };
 }
