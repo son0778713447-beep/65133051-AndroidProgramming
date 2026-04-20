@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="70dp"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView
+        android:id="@+id/imAnhDaiDien"
+        android:layout_width="70dp"
+        android:background="@color/black"
+        android:layout_height="70dp"/>
+    <LinearLayout
+        android:paddingLeft="5dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="70dp">
+        <TextView
+            android:id="@+id/tvTenDuLich"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:textStyle="bold"
+            android:text="Điểm du lịch thứ 1"/>
+        <TextView
+            android:id="@+id/tvTen"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/design_default_color_error"
+            android:text="Nha Trang"/>
+        <TextView
+            android:id="@+id/tvDiaChi"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textStyle="bold"
+            android:text="Du lịch"/>
+    </LinearLayout>
+</LinearLayout>
