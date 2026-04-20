@@ -1,2 +1,2 @@
 # 65133051-AndroidProgramming
-Lập trình Android
+Chụp kết quả thi giữa kì 2
