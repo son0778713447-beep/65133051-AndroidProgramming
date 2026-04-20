@@ -32,4 +32,22 @@ public class MainActivity extends AppCompatActivity {
         //Thuc hien chuyen
         startActivity(iManHinhKhac);
     }
+    // Hàm đáp ứng sự kiện nấn lên nút "Sang màn hình khác"
+    // Xử lý chuyển màn hình
+    public void ChuyenGioiThieu (View v) {
+        //Tạo một đối tượng Intent
+        //Tham số thứ 2 của ham tạo này, là tên Activity ( màn hình ) ta muốn chuyển sang
+        Intent iManHinhKhac = new Intent(this, ActivityGioiThieu.class);
+        //Thuc hien chuyen
+        startActivity(iManHinhKhac);
+    }
+    // Hàm đáp ứng sự kiện nấn lên nút "Sang màn hình khác"
+    // Xử lý chuyển màn hình
+    public void ChuyenTinhThanh (View v) {
+        //Tạo một đối tượng Intent
+        //Tham số thứ 2 của ham tạo này, là tên Activity ( màn hình ) ta muốn chuyển sang
+        Intent iManHinhKhac = new Intent(this, ActivityTinhThanh.class);
+        //Thuc hien chuyen
+        startActivity(iManHinhKhac);
+    }
 }
