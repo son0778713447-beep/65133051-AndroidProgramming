@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "68673216956",
+    "firebase_url": "https://vieccanlam-f1e68-default-rtdb.firebaseio.com",
+    "project_id": "vieccanlam-f1e68",
+    "storage_bucket": "vieccanlam-f1e68.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:68673216956:android:e65478d5d38eacf8c28bb9",
+        "android_client_info": {
+          "package_name": "nts.cntt2.vieccanlam"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-qsgy9dBBIguLrybZ6WqLFt75Yn0STVI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
