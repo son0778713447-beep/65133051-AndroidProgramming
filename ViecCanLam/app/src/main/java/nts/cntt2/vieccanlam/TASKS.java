@@ -4,12 +4,12 @@ import java.io.Serializable;
 import java.util.HashMap;
 
 public class TASKS implements Serializable {
-    String name,date,message,priotiry;
+    String name,message,date,priotiry;
 
-    public TASKS(String name, String date, String message, String priotiry) {
+    public TASKS(String name, String message, String date, String priotiry) {
         this.name = name;
-        this.date = date;
         this.message = message;
+        this.date = date;
         this.priotiry = priotiry;
     }
 
